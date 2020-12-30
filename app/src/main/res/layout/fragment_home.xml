@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bg_green"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".45"
+            android:background="@drawable/leader_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.8"
+                    android:orientation="vertical">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:src="@drawable/ic_launcher_background"
+                        app:civ_border_width="2dp"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/imageViewb"
+                        android:layout_weight="1"
+                        app:civ_border_color="#FFFFFF"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageViewb"
+                        android:text="name"
+                        android:fontFamily="@font/poppins_regular"
+                        android:id="@+id/nameTxtb"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/_12sdp">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nameTxtb"
+                        android:text="name"
+                        android:fontFamily="@font/poppins_regular"
+                        android:id="@+id/ponitTxtb"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/_10sdp">
+
+                    </TextView>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageViewa"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_55sdp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_launcher_background"
+                        android:visibility="visible"
+                        app:civ_border_color="#FFFFFF"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageViewa"
+                        android:text="name"
+                        android:fontFamily="@font/poppins_regular"
+                        android:id="@+id/nameTxta"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/_12sdp">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nameTxta"
+                        android:text="name"
+                        android:fontFamily="@font/poppins_regular"
+                        android:id="@+id/ponitTxta"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/_10sdp">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_38sdp"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:src="@drawable/icon_crown">
+                    </ImageView>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.8"
+                    android:orientation="vertical">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:src="@drawable/ic_launcher_background"
+                        app:civ_border_width="2dp"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:id="@+id/imageViewc"
+                        app:civ_border_color="#FFFFFF"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageViewc"
+                        android:text="name"
+                        android:id="@+id/nameTxtc"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/_12sdp">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nameTxtc"
+                        android:text="name"
+                        android:fontFamily="@font/poppins_regular"
+                        android:id="@+id/ponitTxtc"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/_10sdp">
+
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".65"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/rounded_corner">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rVLeaderboard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/cardView"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_50sdp">
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_leaderboard"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/dash_bg">
+
+    </TextView>
+
+
+</RelativeLayout>

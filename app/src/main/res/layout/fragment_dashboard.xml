@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dash_bg"
+    tools:context=".fragment.DashboardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="@dimen/_130sdp"
+            android:src="@drawable/dash_head_cropped">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_dashboard"
+            android:textSize="@dimen/_18sdp"
+            android:id="@+id/dashtitle"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/dash_bg">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dashtitle"
+            android:text="@string/sub_title_dashboard"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/dash_bg">
+        </TextView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            android:id="@+id/cardView"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_110sdp"
+            android:elevation="4dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center|start"
+                    android:textSize="@dimen/_12sdp"
+                    android:id="@+id/editTxtSearch"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:maxLines="1"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:layout_toLeftOf="@+id/imageViewSearch"
+                    android:hint="Looking for..">
+
+                </EditText>
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:id="@+id/imageViewSearch"
+                    android:src="@drawable/icon_search"
+                    android:layout_alignParentEnd="true"
+                    >
+                </ImageView>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rVDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cardView"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/_50sdp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

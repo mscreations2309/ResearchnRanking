@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dash_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="@dimen/_180sdp"
+            android:src="@drawable/dash_head_cropped">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/backbtn"
+            android:paddingStart="@dimen/_10sdp"
+            android:src="@drawable/back_button">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_invest"
+            android:textSize="@dimen/_18sdp"
+            android:layout_toRightOf="@+id/backbtn"
+            android:id="@+id/dashtitle"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/dash_bg">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dashtitle"
+            android:text="@string/sub_title_invest"
+            android:textSize="@dimen/_12sdp"
+            android:layout_toRightOf="@+id/backbtn"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/dash_bg">
+        </TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cardView"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginTop="@dimen/_110sdp"
+            android:elevation="4dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rVinvest"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="10dp"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:id="@+id/lltext"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:text="dummy text"
+                    android:textColor="@color/bg_green"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/tileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:text="dummy text"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18sdp">
+
+                </TextView>
+
+
+            </LinearLayout>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_below="@+id/lltext"
+                android:layout_width="match_parent"
+                android:layout_above="@+id/indicatorCircle"
+                android:layout_height="match_parent"/>
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicatorCircle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:layout_alignParentBottom="true"
+                app:ci_animator="@animator/indicator_no_animator"
+                app:ci_drawable="@drawable/green_radius"
+                app:ci_drawable_unselected="@drawable/black_radius"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

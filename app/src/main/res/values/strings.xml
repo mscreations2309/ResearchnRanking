@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Research n Ranking</string>
+    <string name="title_activity_dashboard">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_leaderboard">Leaderborad</string>
+    <string name="title_dashboard">Welcome to LEARNR</string>
+    <string name="title_learn">Learn with RNR</string>
+    <string name="title_invest">Why Invest?</string>
+    <string name="sub_title_invest">Why you should invest in stock market?</string>
+    <string name="sub_title_dashboard">The app that let\'s you learn new things in a better way</string>
+    <string name="sub_title_learn">Learn the basic of investment &amp; how to start with your first investment</string>
+    <string name="title_explore">Explore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
