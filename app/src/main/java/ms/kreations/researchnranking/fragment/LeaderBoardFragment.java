@@ -48,9 +48,6 @@ public class LeaderBoardFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         root = inflater.inflate(R.layout.fragment_home, container, false);
         initUI();
-        rVLeaderboard.setHasFixedSize(true);
-        rVLeaderboard.setLayoutManager(new LinearLayoutManager(getActivity()));
-        modelLeaderBoardList = new ArrayList<>();
         setStaticData();
         addNameMethod();
         addImageMethod();
@@ -70,14 +67,17 @@ public class LeaderBoardFragment extends Fragment {
         ponitTxtb=root.findViewById(R.id.ponitTxtb);
         ponitTxtc=root.findViewById(R.id.ponitTxtc);
         rVLeaderboard=root.findViewById(R.id.rVLeaderboard);
+        rVLeaderboard.setHasFixedSize(true);
+        rVLeaderboard.setLayoutManager(new LinearLayoutManager(getActivity()));
+        modelLeaderBoardList = new ArrayList<>();
     }
     private void setStaticData() {
         nameTxta.setText("Divya");
         nameTxtb.setText("Sharang");
         nameTxtc.setText("Abhijit");
-        ponitTxta.setText("2000");
-        ponitTxtb.setText("1700");
-        ponitTxtc.setText("1600");
+        ponitTxta.setText("2000 Points");
+        ponitTxtb.setText("1700 Points");
+        ponitTxtc.setText("1600 Points");
         Glide.with(getActivity()).load(Uri.parse(("file:///android_asset/leadera.png"))).into(imageViewa);
         Glide.with(getActivity()).load(Uri.parse(("file:///android_asset/leaderb.png"))).into(imageViewb);
         Glide.with(getActivity()).load(Uri.parse(("file:///android_asset/leaderc.png"))).into(imageViewc);

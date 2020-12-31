@@ -64,7 +64,7 @@
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight=".5"
+                    android:layout_weight="1.2"
                     android:orientation="vertical">
 
 
@@ -74,6 +74,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:layout_marginTop="@dimen/_55sdp"
                         android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
                         android:src="@drawable/ic_launcher_background"
                         android:visibility="visible"
                         app:civ_border_color="#FFFFFF"
@@ -109,6 +110,7 @@
                         android:layout_marginTop="@dimen/_38sdp"
                         android:layout_weight="1"
                         android:visibility="visible"
+                        android:layout_centerHorizontal="true"
                         android:paddingTop="@dimen/_5sdp"
                         android:paddingStart="@dimen/_5sdp"
                         android:paddingEnd="@dimen/_5sdp"

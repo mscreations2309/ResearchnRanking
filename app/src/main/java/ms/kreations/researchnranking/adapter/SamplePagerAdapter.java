@@ -125,9 +125,9 @@ public class SamplePagerAdapter extends PagerAdapter {
         //imageView
         RoundedImageView imageView=new RoundedImageView(view.getContext());
         imageView.setLayoutParams(new android.view.ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,400));
-        imageView.setMaxHeight(200);
+        imageView.setMaxHeight(400);
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        imageView.setMaxWidth(200);
+        imageView.setMaxWidth(400);
         Glide.with(context).load(Uri.parse(modelLearn.getTileImage()))
                 .into(imageView);
         linearLayout2.addView(imageView);
